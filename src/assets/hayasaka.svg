@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300" preserveAspectRatio="xMidYMid meet">
+  <!-- Background transparent so it can be placed over any color -->
+  <rect width="100%" height="100%" fill="black"/>  <!-- Circle icon -->  <g transform="translate(160,150)">
+    <circle cx="0" cy="0" r="120" fill="#12C7C4"/><!-- First musical note (left) -->
+<g transform="translate(-30,-20)">
+  <circle cx="-28" cy="36" r="18" fill="black" opacity="0.95"/>
+  <rect x="-26" y="-56" width="12" height="92" rx="3" fill="black" opacity="0.95" transform="rotate(-12)"/>
+  <path d="M-20 -10 C 10 -20, 34 -18, 40 -6" stroke="black" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.95" transform="translate(-10,22) rotate(-10)"/>
+</g>
+
+<!-- Second musical note (right) -->
+<g transform="translate(40,-35)">
+  <circle cx="20" cy="48" r="18" fill="black" opacity="0.95"/>
+  <rect x="18" y="-42" width="12" height="88" rx="3" fill="black" opacity="0.95" transform="rotate(12)"/>
+  <path d="M30 -4 C 58 -12, 78 -8, 86 6" stroke="black" stroke-width="8" stroke-linecap="round" fill="none" opacity="0.95" transform="translate(-6,20) rotate(8)"/>
+</g>
+
+<!-- Thin circular cut to mimic original style -->
+<circle cx="0" cy="0" r="120" fill="none" stroke="#000000" stroke-opacity="0.08" stroke-width="6"/>
+
+  </g>  <!-- Brand text --><text x="340" y="190" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="800" font-size="140" letter-spacing="6" fill="#12C7C4">HAYASAKA</text>
+
+  <!-- Optional subtle glow (kept lightweight for SVG) -->  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g filter="url(#glow)">
+    <circle cx="160" cy="150" r="140" fill="#12C7C4" opacity="0.06"/>
+  </g>
+</svg>
